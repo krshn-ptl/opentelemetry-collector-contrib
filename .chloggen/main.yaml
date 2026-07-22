@@ -4,7 +4,7 @@
 change_type: bug_fix
 
 # The name of the component, or a single word describing the area of concern, (e.g. receiver/filelog)
-component: extension/encoding
+component: extension/text_encoding
 
 # A brief description of the change.  Surround your text with quotes ("") if it needs to start with a backtick (`).
 note: Fix a bug in the text encoding extension where logs were silently truncated if the input had more than 1000 records.
