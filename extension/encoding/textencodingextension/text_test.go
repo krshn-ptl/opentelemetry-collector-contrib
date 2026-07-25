@@ -6,9 +6,9 @@ package textencodingextension
 import (
 	"bytes"
 	"fmt"
-	"strings"
 	"io"
 	"regexp"
+	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -189,7 +189,7 @@ func TestUnmarshalLogsAcrossMultipleBatches(t *testing.T) {
 
 	var input strings.Builder
 	const recordCount = 1863
-	for i := 0; i < recordCount; i++ {
+	for i := range recordCount {
 		fmt.Fprintf(&input, "record-%d\n", i)
 	}
 
